@@ -10,9 +10,9 @@ library(ggmap)
 library(sf)
 library(mapview)
 library(googleAuthR)
-setwd('C:/Users/gabee/Desktop/Police Shootings/Mapping Police Violence')
+setwd('C:/Users/gabee/Desktop/Police Shootings/Mapping Police Violence') #Change to your path
 
-api_key <- # whoops I posted my api.. am dumb, please don't destroy my bank account
+api_key <- # get yerown api! Pretty easy
 register_google(key = api_key, write = TRUE)
 
 headers <- c('name','age', 'gender', 'race',	'victim_image', 'inc_date', 'inc_addr', 'city', 'state', 'zip', 'county', 'pd', 'cause', 'inc_desc', 'inc_disp', 'charged', 'news_url', 'mentalill', 'unarmed',	'weapon_wp', 'threat_wp',	'flee',	'camera_body', 'id_wp', 'offduty', 'popclass', 'id')
